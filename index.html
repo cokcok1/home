@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的快捷連結</title>
+    <style>
+        :root {
+            --bg-color: #f0f2f5;
+            --card-bg: #ffffff;
+            --text-color: #333;
+            --accent-color: #007AFF; /* 經典 iOS 藍 */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: #1c1e21;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* 限制喺手機闊度 */
+            display: grid;
+            gap: 15px;
+        }
+
+        .shortcut-btn {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.1s, background-color 0.2s;
+            border: 1px solid #e5e5e5;
+        }
+
+        /* 撳落去嘅視覺反應 */
+        .shortcut-btn:active {
+            transform: scale(0.97);
+            background-color: #ebebeb;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 15px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--bg-color);
+            border-radius: 10px;
+        }
+
+        .label {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>我的快捷目錄</h1>
+
+    <div class="container">
+        <a href="https://cokcok1.github.io/bible-ai2/" class="shortcut-btn">
+            <div class="icon">📖</div>
+            <div class="label">聖經研讀</div>
+        </a>
+
+        <a href="https://cokcok1.github.io/Game2/" class="shortcut-btn">
+            <div class="icon">🎮</div>
+            <div class="label">快樂學聖經 2</div>
+        </a>
+
+        <a href="https://cokcok1.github.io/Game1/" class="shortcut-btn">
+            <div class="icon">🕹️</div>
+            <div class="label">福音麻雀 1</div>
+        </a>
+
+        <a href="https://cokcok1.github.io/hotline/hotline.html" class="shortcut-btn">
+            <div class="icon">☎️</div>
+            <div class="label">上帝緊急熱線 / Hotline</div>
+        </a>
+    </div>
+
+    <div class="footer">
+        © 2026 My Workspace
+    </div>
+
+</body>
+</html>
